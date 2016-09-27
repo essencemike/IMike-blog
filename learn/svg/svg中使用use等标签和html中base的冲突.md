@@ -10,7 +10,7 @@
 
 如果使用了base标签的话，url的引入机制就会发生变化，导致引入不进来。请看下面的例子：
 
-`
+```
 <svg style="width: 100%;height:100%;" class="svgGraph" xmlns="http://www.w3.org/2000/svg" "> 
 
     <g id="rootGroup" transform="translate(175, 175)">
@@ -64,11 +64,11 @@
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#e5b306f27b614ee58e5df8282091a52c" x="175" y="175"></use>
 
 </svg>
-`
+```
 
 上面是没有使用base标签的时候，`` filter: url(#f1) `` 是可以显示出来的，当使用了base之后：
 
-`
+```
 <html>
 
 <head>
@@ -133,7 +133,7 @@
 
 </svg>
 ...
-`
+```
 
 这是如果 ` filter: url(#f1) ` 就显示不出来了。
 
@@ -150,7 +150,7 @@
 
 如果使用框架，并且use等标签是js动态生成的，那么：
 
-`
+```
 var useEle = document.getElementById('use');
 
 // 或者使用jq, 这是使用jq
@@ -164,7 +164,7 @@ useEle.attr('xlink:href', window.location.href + d.id)
         .attr('x', 175)
 
         .attr('y', 175);
-`
+```
 
 
 
