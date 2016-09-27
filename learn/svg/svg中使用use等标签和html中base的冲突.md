@@ -142,11 +142,11 @@
 如果前端主流框架Angular 1.3之后的版本都支持html5Mode模式，这时候就需要设置base属性。包括如果使用nginx反向代理之后也需要设置base属性
 只需要将location.href添加到url中即可
 
-`
+```
 <base href="http://someone.com">
 
 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://someone.com#e5b306f27b614ee58e5df8282091a52c" x="175" y="175"></use>
-`
+```
 
 如果使用框架，并且use等标签是js动态生成的，那么：
 
